@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+}
+.field {
+    border: 1px solid hsl(0, 0%, 70%);
+    outline: none;
+    cursor: pointer;
+    padding: .5em;
+    border-radius: .3em;
+    font-size: inherit;
+}
+.field.def:focus, .field.def:hover {
+    box-shadow: 0 0 10px 0 hsl(207,100%, 50%);
+
+}
+.field.success {
+    border-color:limegreen;
+    border-width: 2px;
+}
+.field.success:hover, .field.success:focus {
+    box-shadow: 0 0 10px 0 limegreen;
+}
+.field.error {
+    border-color: red;
+
+}
+.field.error:hover, .field.error:focus {
+    box-shadow: 0 0 10px 0 red;
+}
+.field.large {
+    font-size: 1.25em;
+}
+.field.large:focus, .field.large:hover {
+    box-shadow: 0 0 10px 0 hsl(207,100%, 50%);
+}
+.field.small {
+    font-size: .5em;
+}
+.field.small:hover, .field.small:focus {
+    box-shadow: 0 0 10px 0 hsl(207,100%, 50%);
+}
+.field.disabled {
+    cursor:default;
+    background-color: hsl(0, 0%, 90%);
+
+}
